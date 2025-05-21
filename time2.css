@@ -1,0 +1,53 @@
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .circle-container {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: conic-gradient(green); /* default */
+    z-index: 0;
+  }
+  
+  #hour-progress {
+    background: conic-gradient(red);
+  }
+  #minute-progress {
+    background: conic-gradient(green);
+  }
+  #second-progress {
+    background: conic-gradient(yellow);
+  }
+  
+  .label {
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 1;
+  }
+  
